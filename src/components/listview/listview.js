@@ -437,7 +437,7 @@ export function getListViewHtml(options) {
             html += '<div class="secondary listItemMediaInfo">';
             html += mediaInfo.getPrimaryMediaInfoHtml(item, {
 
-                year: false,
+                year: options.showMovieYear === true && item.Type === 'Movie',
                 container: false,
                 episodeTitle: false,
                 criticRating: false,
